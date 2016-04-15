@@ -1,20 +1,20 @@
 const through = require('through2');
 const gutil = require('gulp-util');
 const PluginError = gutil.PluginError;
-const fs = require("fs");
-const path = require('path');
 const tinify = require("tinify");
-const Spinner = require('cli-spinner').Spinner;
 
 // consts
-const PLUGIN_NAME = 'gulp-tinypng';
+const PLUGIN_NAME = 'gulp-tinify';
 
 // plugin level function (dealing with files)
-function gulpTinypng(options) {
-    if (!options) {
+function gulpTinify(options) {
+    if (!options && options.key) {
         throw new PluginError(PLUGIN_NAME, 'Missing prefix text!');
     } else {
         tinify.key = options.key;
+    }
+    if (!options && options.verbose) {
+        options.verbose = true;
     }
 
     key = new Buffer(options.key); // allocate ahead of time
@@ -32,7 +32,7 @@ function gulpTinypng(options) {
             }
             tinify.fromBuffer(file.contents).toBuffer(function(err, resultData) {
                 if (err) {
-                    this.emit('error', new PluginError(PLUGIN_NAME, 'Something went wrong connecting to tinypng servers'));
+                    this.emit('error', new PluginError(PLUGIN_NAME, 'Something went wrong connecting to tinify servers'));
                 }
                 if (options.verbose) {
                     gutil.log(gutil.colors.magenta(file.relative) + gutil.colors.green('✔ ('+((1 - resultData.length/file.contents.length) * 100).toFixed()+'% saved)'));
@@ -54,4 +54,4 @@ function gulpTinypng(options) {
 };
 
 // exporting the plugin main function
-module.exports = gulpTinypng;
+module.exports = gulpTinify;
