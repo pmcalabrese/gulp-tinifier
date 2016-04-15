@@ -31,7 +31,7 @@ tinifier has a simple sintax accepts one only argument
 
 `options` is an object and has the following proprieties
 
-  - *key* [string] your API key (you can grab it from [https://tinypng.com/developers](https://tinypng.com/developers)
+  - *key* [string] your API key (you can grab it from [https://tinypng.com/developers](https://tinypng.com/developers) )
   - *verbose* [boolean] true by default, it will show the progress in the console
  
 
