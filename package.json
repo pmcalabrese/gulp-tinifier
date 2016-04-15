@@ -1,16 +1,23 @@
 {
   "name": "gulp-tinifier",
   "version": "1.0.0",
-  "description": "A plugin for compress your images with tinypng service",
+  "description": "A Gulp plugin for compress images with https://tinypng.com service",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "gulp",
+    "gulpplugin",
+    "tinypng",
+    "tinifier",
     "compress",
     "images"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:pmcalabrese/gulp-tinifier.git"
+  },
   "author": "Pachito Marco Calabrese <pm.calabrese@gmail.com>",
   "license": "ISC",
   "dependencies": {
