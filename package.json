@@ -1,5 +1,5 @@
 {
-  "name": "gulp-tinify",
+  "name": "gulp-tinifier",
   "version": "1.0.0",
   "description": "A plugin for compress your images with tinypng service",
   "main": "index.js",
