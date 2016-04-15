@@ -1,0 +1,21 @@
+{
+  "name": "gulp-tinify",
+  "version": "1.0.0",
+  "description": "A plugin for compress your images with tinypng service",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gulp",
+    "compress",
+    "images"
+  ],
+  "author": "Pachito Marco Calabrese <pm.calabrese@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "gulp-util": "^3.0.7",
+    "through2": "^2.0.1",
+    "tinify": "^1.3.0"
+  }
+}
