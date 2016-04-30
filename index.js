@@ -35,7 +35,7 @@ function gulpTinify(options) {
                     this.emit('error', new PluginError(PLUGIN_NAME, 'Something went wrong connecting to tinify servers'));
                 }
                 if (options.verbose) {
-                    gutil.log(gutil.colors.magenta(file.relative) + gutil.colors.green('✔ ('+((1 - resultData.length/file.contents.length) * 100).toFixed()+'% saved)'));
+                    gutil.log(gutil.colors.magenta(file.relative) + gutil.colors.green(' ✔ ('+((1 - resultData.length/file.contents.length) * 100).toFixed()+'% saved)'));
                 }
                 file.contents = resultData;
                 this.push(file);
