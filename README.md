@@ -1,6 +1,9 @@
 # gulp-tinifier
 gulp-tinifier is a simple plugin which allows you to compress your images with [https://tinypng.com/](https://tinypng.com/) service
 
+![gulp-tinifier in action](tinifier.png "gulp-tinifier in action")
+
+
 ## Install
 
 ```bash
