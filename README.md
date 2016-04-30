@@ -1,7 +1,7 @@
 # gulp-tinifier
 gulp-tinifier is a simple plugin which allows you to compress your images with [https://tinypng.com/](https://tinypng.com/) service
 
-<img src="tinifier.png" width="300" alt="gulp-tinifier in action">
+<img src="tinifier.png" width="445" alt="gulp-tinifier in action">
 
 ## Install
 
